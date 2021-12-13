@@ -1,63 +1,74 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
-    height: 100%;
-  }
-  .grid-item1{
-  
-      background-color: royalblue;
-      display: grid;
-  }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
-  }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
-  }
-  span{
-      color: black;
-      font-weight: bolder;
-  }
-  p{
-      color: white;
-      
-  }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
-    
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 100vh;
+    background-image: radial-gradient(rgb(253, 168, 168), rgb(253, 123, 123));
+}
+
+.app-wrap header {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.app-wrap header input {
+    font-size: 18px;
+    padding: 7px 10px;
+    width: 280px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid rgb(255, 253, 159);
+    background-color: rgba(255, 255, 255, 0.301);
+    color: #000;
+}
+
+.app-wrap main .location {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.app-wrap main .location .city {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.app-wrap main .location .date {
+    font-weight: 500;
+    color: #fff;
+}
+
+.app-wrap main .current {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.app-wrap main .current .temp {
+    font-size: 100px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0px 10px 2px #000;
+}
+
+.app-wrap main .current .weather {
+    padding-top: 40px;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    color: #fff;
+}
+
+.app-wrap main .current .hi-low {
+    padding-top: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
